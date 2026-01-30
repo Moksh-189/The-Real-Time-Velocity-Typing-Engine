@@ -286,10 +286,9 @@ body {
     transition: color 0.1s ease, text-shadow 0.1s ease;
 }
 
-/* Correct Character - Electric Cyan with Glow */
+/* Correct Character - White */
 #typing-area span.correct {
-    color: var(--accent-cyan);
-    text-shadow: 0 0 8px rgba(34, 211, 238, 0.6), 0 0 20px rgba(34, 211, 238, 0.3);
+    color: #ffffff;
 }
 
 /* Incorrect Character - Hot Pink with Strikethrough */
