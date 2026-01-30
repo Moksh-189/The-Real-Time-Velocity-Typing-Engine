@@ -275,8 +275,10 @@ body {
     position: relative;
     z-index: 1;
     min-height: 180px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    word-break: normal;
+    overflow-wrap: normal;
+    white-space: normal;
+    text-align: left;
 }
 
 /* Character Spans */
