@@ -57,7 +57,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     position: relative;
 }
 
@@ -643,14 +644,22 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Hide scrollbars */
+/* Custom Scrollbar */
 body::-webkit-scrollbar {
-    display: none;
+    width: 8px;
 }
 
-body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+body::-webkit-scrollbar-track {
+    background: var(--bg-deep);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--glass-border);
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .results-glass::-webkit-scrollbar {
